@@ -1,0 +1,64 @@
+====================== RESULTS FOR AMM DISCRETIZATION =================================
+For Research Use: output-only modal analysis tool box v0.0
+Copyright by Hewenxuan Li, hewenxuan_li@uri.edu
+Report Generated on:17-Feb-2022 08:33:30
+---------------------- MEMBRANE SPECIFICATION ---------------------------------------------
+Size of the membrane (a0, b0): (1,2)
+Mass Density Distribution: 2*rho - (x - a/2).^2 - (y - b/2).^2
+Tension Distribution: T*heaviside(x)*heaviside(y)
+Force Specification: 1
+Mass Density Constant (rho0): 1
+Tension Constant (T0): 1
+-------------------------- STEPPING SETUP ---------------------------------------------
+Sampling Rate (fs): 20 Hz
+Simulation Time (tend): 60 Secs
+Forcing Type: FreeDecay
+Stepping Method: LSIM
+Simulation Space: Modal
+Type of Excitation: Beam
+Weight of Forcing: Base
+---------------------- DISCRETIZATION INFORMATION -------------------------------------
+Indices of the x-direction eigenfunctions considered (m): 1  2  3  4  5
+Indices of the y-direction eigenfunctions considered (n): 1  2
+Number of Modes Considered (nm): 10 
+Spatial Resolution (dx, dy): (0.01, 0.02)The stiffness matrix (first 5-by-5):
+ |12.34               0.00               -0.00                0.00               -0.00|
+ |0.00              41.95                0.00               -0.00                0.00|
+ |-0.00               0.00               91.29                0.00                0.00|
+ |0.00              -0.00                0.00              160.38                0.00|
+ |-0.00               0.00                0.00                0.00              249.21|
+
+See full systems matrix in:L://My Drive//Graduate study//Research//My_paper//Journal//MSSP//LNN_NNM_ID//Code//Data//SMD_example//Fixed-fixed Membrane//Case IV - N10n10201m601 - 1//Data.m
+using Data.M, Data.C, and Data.K
+
+The stiffness matrix (first 5-by-5):
+ |1.84               0.00               -0.04                0.00               -0.01|
+ |0.00               1.80               -0.00               -0.05                0.00|
+ |-0.04              -0.00                1.79                0.00               -0.05|
+ |0.00              -0.05                0.00                1.79               -0.00|
+ |-0.01               0.00               -0.05               -0.00                1.79|
+
+Type of Damping:Modal
+Modal Damping (mode 1-5): |0.010, 0.010, 0.010, 0.010, 0.010|
+The damping matrix (first 5-by-5):
+ |0.10              -0.00               -0.00               -0.00               -0.00|
+ |-0.00               0.17               -0.00               -0.00               -0.00|
+ |-0.00              -0.00                0.26               -0.00               -0.00|
+ |-0.00              -0.00               -0.00                0.34                0.00|
+ |-0.00              -0.00               -0.00                0.00                0.42|
+
+The forcing weight (first 5 modes):
+ |1.15               0.00                0.38                0.00                0.23|
+
+The natural frequencies (rad/sec):
+ |2.592              3.423               4.829               5.474               7.139|
+
+The damped natural frequencies (rad/sec):
+ |2.592              3.423               4.828               5.473               7.138|
+
+---------------------- RESPONSE INFORMATION -------------------------------------
+
+The Size of the Configuration Data:1201-by-10201
+The Manitude of Modal Participation (first 5 modes):0.90484     0.90484     0.81873     0.81873     0.74082
+Modes Included: 1   2   3   4   5   6   7   8   9  10
+=======================================================================================

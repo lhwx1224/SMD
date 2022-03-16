@@ -1,0 +1,62 @@
+====================== RESULTS FOR AMM DISCRETIZATION =================================
+For Research Use: output-only modal analysis tool box v0.0
+Copyright by Hewenxuan Li, hewenxuan_li@uri.edu
+Report Generated on:16-Mar-2022 17:38:29
+---------------------- PIN-PINED BEAM SPECIFICATION ---------------------------------------------
+Size of the beam (L0): (1)
+Mass Density Distribution: m*(L - 0.5*x)/L
+Flexural Rigidity Distribution: EI*(L - 0.5*x)/L
+Force Specification: dirac(x - L*10/10)
+Mass Density Constant (m0): 1000
+Flexural Rigidity Constant (EI0): 0.1
+-------------------------- STEPPING SETUP ---------------------------------------------
+Sampling Rate (fs): 1000 Hz
+Simulation Time (tend): 120 Secs
+Forcing Type: FreeDecay
+Stepping Method: LSIM
+Simulation Space: Modal
+Type of Excitation: Beam
+Weight of Forcing: Beam
+---------------------- DISCRETIZATION INFORMATION -------------------------------------
+Number of Modes Considered (nm): 178 
+Spatial Resolution (dx): (0.0059)The stiffness matrix (first 5-by-5):
+ |7.31               3.51                0.00                1.12               -0.00|
+ |3.51             116.89               34.11                0.00                8.95|
+ |0.00              34.11              591.76              139.22                0.00|
+ |1.12               0.00              139.22             1870.25              389.91|
+ |-0.00               8.95                0.00              389.91             4566.05|
+
+See full systems matrix in:L://My Drive//Graduate study//Research//My_paper//Journal//SMD//Code//Examples//Beam1//Data.m
+using Data.M, Data.C, and Data.K
+
+The stiffness matrix (first 5-by-5):
+ |750.00              90.06                0.00                7.21               -0.00|
+ |90.06             750.00               97.27                0.00                9.19|
+ |0.00              97.27              750.00               99.25               -0.00|
+ |7.21               0.00               99.25              750.00              100.07|
+ |-0.00               9.19               -0.00              100.07              750.00|
+
+Type of Damping:Modal
+Modal Damping (mode 1-5): |0.010, 0.010, 0.010, 0.010, 0.010|
+The damping matrix (first 5-by-5):
+ |1.48               0.28                0.00                0.03                0.00|
+ |0.28               5.90                1.06                0.00                0.12|
+ |0.00               1.06               13.30                2.26                0.00|
+ |0.03               0.00                2.26               23.66                3.86|
+ |0.00               0.12                0.00                3.86               36.98|
+
+The forcing weight (first 5 modes):
+ |1.41               0.00               -1.41                0.00                1.41|
+
+The natural frequencies (rad/sec):
+ |0.098              0.395               0.889               1.580               2.468|
+
+The damped natural frequencies (rad/sec):
+ |0.098              0.395               0.889               1.580               2.468|
+
+---------------------- RESPONSE INFORMATION -------------------------------------
+
+The Size of the Configuration Data:120001-by-168
+The Manitude of Modal Participation (first 5 modes):0.012       0.012        0.01        0.01        0.01
+Modes Included: 1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16   17   18   19   20   21   22   23   24   25   26   27   28   29   30   31   32   33   34   35   36   37   38   39   40   41   42   43   44   45   46   47   48   49   50   51   52   53   54   55   56   57   58   59   60   61   62   63   64   65   66   67   68   69   70   71   72   73   74   75   76   77   78   79   80   81   82   83   84   85   86   87   88   89   90   91   92   93   94   95   96   97   98   99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172  173  174  175  176  177  178
+=======================================================================================
